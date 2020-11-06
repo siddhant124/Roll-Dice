@@ -9,15 +9,12 @@
     android:gravity="center"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/generate_random_number"
+    <ImageView
+        android:id="@+id/generate_random_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Roll Dice!!"
-        android:textColor="@android:color/black"
-        android:textSize="35sp"
-
-        />
+        android:src="@drawable/empty_dice"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -53,5 +50,7 @@
 
 
     </LinearLayout>
+
+
 
 </LinearLayout>
