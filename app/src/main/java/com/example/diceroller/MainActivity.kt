@@ -1,5 +1,6 @@
 package com.example.diceroller
 
+import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
@@ -10,13 +11,15 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        this.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
 
         dice_roll.setOnClickListener {
+            lets_start.text = "Game is on..."
             get_random_number()
         }
 
         dice_reset.setOnClickListener {
+            lets_start.text = "Lets play again!!"
             reset_number()
         }
     }
@@ -26,6 +29,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun get_random_number() {
+
         val randomInt = (1..6).random()
         when (randomInt) {
             1 -> generate_random_image.setImageResource(R.drawable.dice_1)
