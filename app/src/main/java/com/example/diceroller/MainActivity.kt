@@ -27,13 +27,13 @@ class MainActivity : AppCompatActivity() {
 
     private fun get_random_number() {
         val randomInt = (1..6).random()
-        when(randomInt){
-            1-> generate_random_image.setImageResource(R.drawable.dice_1)
-            2-> generate_random_image.setImageResource(R.drawable.dice_2)
-            3-> generate_random_image.setImageResource(R.drawable.dice_3)
-            4-> generate_random_image.setImageResource(R.drawable.dice_4)
-            5-> generate_random_image.setImageResource(R.drawable.dice_5)
-            6-> generate_random_image.setImageResource(R.drawable.dice_6)
+        when (randomInt) {
+            1 -> generate_random_image.setImageResource(R.drawable.dice_1)
+            2 -> generate_random_image.setImageResource(R.drawable.dice_2)
+            3 -> generate_random_image.setImageResource(R.drawable.dice_3)
+            4 -> generate_random_image.setImageResource(R.drawable.dice_4)
+            5 -> generate_random_image.setImageResource(R.drawable.dice_5)
+            6 -> generate_random_image.setImageResource(R.drawable.dice_6)
         }
     }
 }
